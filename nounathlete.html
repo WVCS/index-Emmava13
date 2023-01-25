@@ -1,23 +1,89 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title> Athlete </title>
+  
+  </head>
+
+  
 <body>
-<nav>
-     <li><a href="index.html"> HOME</a> </li>
-     <li><a href="nounathlete.html"> THIS PROJECT </a> </li> 
+  <nav>
+    <li class="navli"> <a href="#top"> THE TOP </a> </li>
+    <li class = "navli"> <a href="#Lower"> MY LIST </a> </li>
+    <li class="navli"><a href="nounathlete.html"> THIS PROJECT </a> </li>
+    <li class="navli"><a href="index.html"> HOME </a></li>
+     
+     
+     
     </nav>
-  </body>
+  <br>
+  <br>
+  <br>
+  <h1 id="top"> Athlete </h1>
+  <table>
+    <tr>
+      <th> Sport </th>
+      <th> Athlete </th>
+      <th> Number </th>
+    </tr>
+    <tr>
+      <td> Soccer </td>
+      <td> Lionel Messi </td>
+      <td> 30 </td> 
+    </tr>
+      <tr>
+      <td> Lacrosse </td>
+      <td> Belle Smith </td>
+      <td> 5 </td> 
+    </tr>
+    <tr>
+      <td> Football </td>
+      <td> Joe Burrow </td>
+      <td> 9 </td> 
+    </tr>
+    <tr>
+      <td> Ice Hockey </td>
+      <td> Trevor Zegras </td>
+      <td> 46 </td> 
+    </tr>
+    <br>
+  </table>
+  <br>
+  <img src="https://uploads-ssl.webflow.com/60ae0dae23067f6a07b0868c/60ee2d278b3fd75b7935a9b6_hero-image.png" width="500"
+  height="auto">
+  
+  <center>
+  <p id="Lower"> Favorite Female Players </p>
+  <ul>
+      <li> Charlotte North </li>
+  <li> Alex Morgan </li>
+  <li> Megan Rapinoe </li>
+    <li> Ilona Maher </li>
+    <li> Sky Brown </li>
+    <li> Sam Geiersbach </li>
+    <li> Mosterrat Margritz </li>
+    </ul>
+  
+  <img src="https://github.com/WVCS/index-Emmava13/blob/80ef8067af023d85657db4d7174234a995c1ba36/Emma%20A%20project%201-4.jpg">
+   
+  
+</body>
 </html>
 
 <style>
-  nav {
+  
+
+nav {
   list-style-type:none;
   position: fixed;
   width: 100%;
-  background-color: #60935D;
+  background-color: #6DA06A;
   left: 0;
   top:0;
 }
 
-li {
+.navli {
   display: inline;
   float: right;
   padding: 15px;
@@ -25,10 +91,77 @@ li {
 
 a {
   text-decoration: none;
-  color: #1A281F;
+  color: #F0E6EF;
 }
 
-li:hover {
+.navli:hover {
   background-color: #9C89B8;
+}
+
+body {
+  background-color: #F0E6EF;
+}
+h1 {
+  text-align: center;
+  color: #EAEAEA;
+  font-size: 250%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  style= "list-style-type:circle"; 
+  color: #E0E0E0;
+  font-family: "Trirong", serif;
+  font-size: 130%;
+    line-height: 150%;
+  list-style-position: inside;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Trirong", serif;
+  font-size: 160%;
+}
+
+table, tr, th, td {
+  border: solid #73628A 3px;
+  background: #001B2E;
+  color: #EAEAEA
+  
+}
+
+td, th{
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr :hover {
+  background-color: #CBC5EA;
+}
+
+th :hover {
+  background-color: #CBC5EA;
+}
+body {
+  background-color: #313D5A;
+  color: #CBC5EA;
+  font-weight: ultra bold;
+}
+
+td {
+  font-weight: normal;
 }
 </style>
