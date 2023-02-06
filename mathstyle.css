@@ -13,10 +13,16 @@ nav {
   padding: 15px;
 }
 
-a {
+a{
   text-decoration: none;
-  color: #F0E6EF;
+  color: white;
 }
+
+h2{
+  color:#273C91;
+}
+
+
 
 .navli:hover {
   background-color: #9C89B8;
@@ -24,7 +30,7 @@ a {
 body {
   background-color:#2BBBD8;
 }
-h1, h2 {
+h1{
   color: white;
 }
 
@@ -45,11 +51,52 @@ table {
 }
 td{
   text-align: center;
- font-zixe:20px;
+ font-size:20px;
 }
 
 th{
   font-size: 22px;
   text-shadow: 4px 3px #03256C;
   color:white;
+}
+
+h3{
+  font-size:30px;
+  color:#273C91;
+}
+
+ol{
+  font-size: 22px;
+  color:#184C77;
+  list-style-position: inside;
+}
+
+ol:hover{
+  color: #9CCBF1;
+  background: #273C91;
+}
+
+h3:hover{
+  color: #AEC7DC;
+}
+
+ol,h3{
+  font-family: "Lucida Console", monospace;
+}
+
+div {
+  background-color: #C6F6FF;
+  width: 200px;
+  border: 15px solid #2095AC;
+  padding: 25px;
+  margin: 30px;
+}
+
+.navy{
+  color:#273C91;
+}
+
+.navy:hover{
+  color:white;
+    background:#273C91
 }
