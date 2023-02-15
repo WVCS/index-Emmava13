@@ -23,7 +23,7 @@
     
     
     <div class="wrapper">
-  <div class="A"> Pickle Palooza<img src="Pickle.jpg" width=100%>
+  <div class="A"> Pickle Palooza<img id="logo" src="Pickle.jpg" >
     </div> 
       <div class="B">B</div>
       <div class="C"> C</div>
@@ -119,8 +119,9 @@ h1{
 }
 
 
-img{
-  float: right
+#logo{
+  float: right;
+    object-fit: contain;
 }
 
 div{
