@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
  <title> Pickle Palooza </title>
-    <link rel="icon" type="image/x-icon" href="Pickle.jpg">
-
+    <link rel="icon" type="image/x-icon" href="food/Pickle.jpg">
+  <title>Document</title>
 </head>
 <body>
   <center>
@@ -16,61 +16,35 @@
     <li class="navli"> <a href="food/menu.html"> MENU</a> </li>
     <li class="navli"> <a href="food/aboutus.html"> ABOUT US </a> </li>
     <li class="navli"> <a href="food/pmaking.html"> PICKLE PROCESS </a> </li>
-    
+    <br>
+    <li class="navli"> <img  src="Pickle(2)copy.jpg"> </li>
+    <br>
+    <li class="place"> <a> LOCATIONS: 
+      </a> </li>
+    <li class="location"> <a>San Diego </a></li>
+    <li class="location"> <a> Los Angeles</a></li>
+    <li class="location"> <a> Irvine</a></li>
   </nav>
     
     
     
     
     <div class="wrapper">
-  <div class="A"> Pickle Palooza<img id="logo" src="Pickle.jpg" >
+  <div class="A"> Pickle Palooza<img id="logo" src="food/Pickle.jpg" >
     </div> 
-      <div class="B">B</div>
-      <div class="C"> C</div>
-      <div class="D"> D </div>
-      <div class= "E"> E </div>
+      <div class="B"> In the middle of a pickle come on over and grab a pickle </div>
+      <div class="C"><h2> FLAVOR OF THE WEEK:</h2>Cajun Fried Pickles <br>and a garlic ranch dip </div>
+      <div class="D"> The creation of <br><h3>Pickle Palooza!</h3> </div>
+      <div class= "E"><b> The Secret Sauce </b></div>
    
   <br>
   <br>
   <br>
   <br>
-  
+  <br>
   <br>
     <br>
-    <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-    <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-    <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-    <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-    <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
+    
   
   
   
@@ -119,61 +93,98 @@ h1{
 }
 
 
-#logo{
-  float: right;
-    height:250px;
- width:250px;
+img{
+  float: right
 }
 
 div{
   float:right;
   border: dashed black; 
+  border-radius:10px;
 }
 
 .wrapper{
   display:grid;
-  height:75vh;
+  height:75%;
   width:80%;
   grid-template:
     "A"
     "B"
     "C D E";
-  grid-row-gap: 10px;
-  grid-column-gap:5px;
+  grid-row-gap: 15px;
+  grid-column-gap:10px;
 }
 
 .A{
   grid-row: 1/3;
   grid-column: 1/4;
-  min-height:300px;
+  min-height: 250px;
   font-family: luminari, fantasy;
-  font-size: 56px;
+  font-size: 80px;
   color: #92AA83;
   text-shadow: 2px 2px #5E6F0C ;
-  position:center;
- 
+  text-align:center;
+
 }
 .B{
   grid-row:2/3;
   grid-column:1/4;
-  height:;
-
+  min-height:50px;
+  font-size:30px;
+  text-align:center;
+  font-family:courier new, monospace;
+  color:#F1F7EE;
+  background-color: #92AA83;
 }
 .C{
   grid-row: 3/3;
-
+  background-color:#D5E7B1;
+  color:#5E6F0C;
+  font-size:20px;
+  padding:7%;
+  color:
 }
+
+h2{
+  color:#443A29;
+  font-size:23px;
+}
+
 .D{
   grid-row: 3/3;
- 
+ background-color:#D5E7B1;
+  font-size:25px;
+  color:#2A5016;
+  padding:10%;
 }
 
 .E{
   grid-row:3/3;
+  background-color:#D5E7B1;
+  padding:23%;
+  font-size:24px;
+  color:#5E6F0C;
+}
+#logo {
+   height:250px;
+  width:250px;
+}
+
+.place{
+  padding: 10px;
   
 }
-  
-  
-  
+
+.place:hover{
+  background-color: #9C89B8;
+}
+
+.location{
+  padding: 7px;
+}
+
+.location:hover{
+  background-color: #9C89B8;
+}
   
  </style>
