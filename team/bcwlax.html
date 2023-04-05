@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="Boston College.png">
   </head>
   
-    <body>
+  <body>
     
     <nav>
       <li class="web"> <a href="https://bceagles.com/sports/womens-lacrosse/schedule"> SCHEDULE </a></li>
@@ -52,15 +52,79 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+    <br>
+    <br>
+    <center>
+  <div class="wrapper">
+    <div class="A"> <h1> Team Stats </h1>
+    <table>
+      <tr>
+        <th> </th>
+        <th>Boston College </th>
+      </tr>
+      <tr> 
+        <td> Goals </td>
+        <td class="cent"> 176 </td>
+      </tr>
+      <tr>
+        <td> Assists </td>
+        <td class="cent"> 100 </td>
+      </tr>
+      <tr>
+        <td> Shots </td>
+        <td class="cent"> 390 </td>
+      </tr>
+      <tr>
+        <td> Free Position </td>
+        <td class="cent"> 25 </td>
+      </tr>
+      <tr> 
+        <td> Woman-Up </td>
+        <td class="cent"> 12</td>
+      </tr>
+      <tr>
+        <td> Woman-Down </td>
+        <td class="cent"> 0 </td>
+      </tr>
+      <tr>
+        <td> Ground Balls</td>
+        <td class="cent"> 171 </td>
+      </tr>
+      <tr>
+        <td> Turnovers </td>
+        <td class="cent"> 178 </td>
+      </tr>
+      <tr>
+        <td> Caused Turnovers </td>
+        <td class="cent"> 100 </td>
+      </tr>
+      <tr>
+        <td> Draw Controls </td>
+        <td class="cent"> 192 </td>
+      </tr>
+      <tr>
+        <td> Clears </td>
+        <td class="cent"> 189-207 </td>
+      </tr>
+      </table>
+    </div>
+  
+    <div class="B"><h1> Next game </h1>
+      <img src="https://und.com/imgproxy/WS8x7ZNyXnYNwWTguqQyy3AzNB8dGcvOPvNDpTsbpjQ/fit/500/500/ce/0/aHR0cHM6Ly91bmQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE5LzA5L05EX01vbm9ncmFtXzIwMTVfT25lX0NvbG9yX2dvbGQucG5n.png">
+      <br>
+      <h2> at NO.8 Notre Dame</h2>
+      <br>
+      <h3> April 8 / 12pm / ACC / ESPNU </h3>  
+    </div>
+  
+    </div>
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
-  
-  
-  
-  
-  
-  
-  
-   
+    </center>
   </body>
     
     
@@ -105,6 +169,7 @@ function showSlides(n) {
   
   
 
+
 body{
   background-color: #F7F3E3
 }
@@ -116,6 +181,7 @@ nav {
   background-color: #600000;
   left: 0;
   top:0;
+  z-index:1;
 }
 
 .web {
@@ -161,8 +227,8 @@ img {vertical-align: middle;}
   display:block;
   top: 50%;
   width: auto;
-  margin-left:5vw;
-  margin-right:5vw;
+  margin-left:15vw;
+  margin-right:15vw;
   padding: 25px;
   margin-top: -22px;
   color: #7A0C0C;
@@ -231,6 +297,67 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+.wrapper{
+  display:grid;
+  grid-template:
+    "A B"; 
+  margin:auto;
+  width:90vw;
+  grid-column-gap: 3px;
+}
+
+.A{
+  border: black solid 2px;
+  grid-column:1/2;
+  grid-row:1/3;
+}
+
+.B{
+  border:black solid 2px;
+  grid-column:2/2;
+  grid-row: 1/3;
+}
+
+th{
+  background-color:#D9AF81;
+  color: #820D0D;
+  font-size:120%;
+}
+table{
+  border:0px;
+  width:100%;
+  border-collapse:collapse;
+}
+
+td{
+  background-color:#ECD7C0;
+  padding: 1%;
+}
+tr{
+   border-bottom: 1px solid #600000;
+}
+.cent{
+  text-align:center;
+}
+
+h3{
+  color:#A8763E;
+  font-style: italic;
+  font-size:95%;
+  
+}
+
+h2{
+  color:#7A0C0C;
+  font-size:160;
+  font-style:bold;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h1{
+  color:#520000;
+}
   
   
 </style>
