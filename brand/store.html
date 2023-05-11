@@ -1,1 +1,262 @@
+<html>
+  
+  <head>
+    <title> Strut & Sparkle</title>
+<link rel="icon" type="image/x-icon" href="brandlogo.png">
+  </head>
+  
+  
+  <body>
+  
+    <nav>
+      <li class="web">  <a href="heels.html"> HEELS </a> </li>
+     <li class="web"> <a href="store.html"> THIS WEBSITE </a> </li>
+     <li class="web"><a href="../index.html"> HOME </a></li> 
+      </nav>  
+    
+    <div id="wholeDiv">
+  <form autocomplete="off" action="http://www.google.com">
+    <div class="finishit">
+      <input id="myInput" type="text" name="myBox"
+             placeholder="Search...">
+    </div>
+  </form>
+  
+ 
+    </div>
+    
+    <center>
+    
 
+      <br>
+      <br>
+      <br>
+      <h1> Strut & Sparkle </h1>
+      <br>
+     
+      <div class="wrapper">
+        <div class="A"><br>
+          Todays<br> Top Picks
+        </div>
+        
+        <div class="B">
+          <br>
+          <img src="https://cdn.shopify.com/s/files/1/1555/3859/products/bella-belle-shoes-eve-lavender-butterfly-heels-garden-party-shoes-2_720x.jpg?v=1668707001" width="40%">
+          <br>L I L A H <br>
+          <h2> pale purple heel with butterfly embroidery</h2>
+          
+          <h3>$260 </h3>
+        </div>
+        
+        <div class="C">
+          <br>
+          <img src=" https://cdn.shopify.com/s/files/1/1555/3859/products/bella-belle-shoes-elise-bow-tulle-wedding-heels-1_720x.jpg?v=1663952640 " width="40%">
+              
+          <br>S T E L L A<br>
+          <h2> ivory satin with white tulle bow on heel</h2>
+          
+          <h3>$230 </h3>
+        </div>
+        
+        <div class="D">
+          <br>
+         <img src=" https://cdn.shopify.com/s/files/1/1555/3859/products/bella-belle-shoes-jasmine-3d-floral-luminous-pearls-and-ivory-beads-wedding-pump-1_720x.jpg?v=1664035370 " width="40%">
+          <br>J E N N Y<br>
+          <h2> white satin with floral jewel embelishments</h2>
+          <h3> $245</h3>
+        </div>
+  
+  
+  
+  <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+    </center>
+      
+  </body>
+</html>
+  
+  
+  <style>
+    nav {
+  list-style-type:none;
+  position: fixed;
+  width: 100%;
+  background-color: #377771;
+  left: 0;
+  top:0;
+}
+
+.web {
+  display: inline;
+  float: right;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: ivory;
+}
+
+.web:hover {
+  background-color: #9C7A97;
+}
+
+body{
+  background-color:#E6CCF1;
+}
+
+.finishit {
+  background-color: #69A297;
+  cursor: help;
+}
+
+
+#myInput {
+  width: 100%;
+  background-color: white;
+  
+}
+
+#wholeDiv {
+  position: fixed;
+ float: left;
+  display: block;
+  margin-top:.3%;
+  margin-left:1%;
+}
+
+h1{
+  font-size:4vw;
+}
+
+h2{
+  font-size:30%;
+}
+
+.wrapper{
+  display:grid;
+  grid-template:
+    "A B C D";
+  height:33%;
+  grid-column-gap: 2px;
+  margin-right:3%;
+  margin-left:3%;
+  min-width: 30%;
+}
+
+.A{
+  border:#69A297 2px solid;
+  text-align:center;
+  display:block;
+  font-size:3vw;
+    padding:2vw;
+}
+
+.B{
+   border:#69A297 2px solid;
+}
+
+.C{
+   border:#69A297 2px solid;
+}
+
+.D{
+   border:#69A297 2px solid;
+}
+    
+  </style>
+
+  
+  <script> 
+    function autocomplete(inp, arr) {
+
+  var currentFocus;
+
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+
+      this.parentNode.appendChild(a);
+
+      for (i = 0; i < arr.length; i++) {
+
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+          b = document.createElement("DIV");
+
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
+          b.addEventListener("click", function(e) {
+
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+var autoAnswers = ["Shoes", "Purple", "Heels", "Sparkle", "Frills", ];
+
+autocomplete(document.getElementById("myInput"), autoAnswers);
+    
+  </script>
