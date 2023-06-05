@@ -3,7 +3,7 @@
 <head>
   
   <title> Athlete </title>
-  <link rel="icon" type="image/x-icon" href="Athlete.png">
+  
   </head>
 
   
@@ -85,6 +85,9 @@
   <center>
     <br id="Lower">
     <br>
+    
+    <div class="wrapper">
+      <div class="A">
   <p> Favorite Female Players </p>
   <ul>
       <li> Charlotte North </li>
@@ -97,7 +100,26 @@
     <li> Sunisa Lee</li>
     <li>Serena Williams </li>
     <li> Katey Ledecky</li>
+    <li> Landry Leming </li>
     </ul>
+      </div>
+      
+      <div class="B">
+        <p> Favorite Male Players </p>
+        <ul>
+          <li>Joe Burrow</li>
+          <li> Lionel Messi</li>
+          <li> Tyler Downs</li>
+          <li>Sam Flicker </li>
+          <li> Trevor Zegras</li>
+          <li>Travis Kelce </li>
+          <li> Jason Kelce</li>
+          <li> Justin Jefferson</li>
+          <li> Drew Blake</li>
+          <li> Daton Fix</li>
+          <li>Jack Hughes </li>
+        </ul>
+      </div>
   
   <img src="Emma A project 1-4.jpg" width="600" height="auto">
    
@@ -167,7 +189,8 @@ body {
 h1 {
   text-align: center;
   color: #EAEAEA;
-  font-size: 250%;
+  font-size: 275%;
+  background-color:;
 }
 
 img {
@@ -212,7 +235,7 @@ th {
 }
 
 table {
-  max-width: 75%;
+  width: 80%;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
@@ -236,6 +259,16 @@ td {
 h2 {
   color:#6DA06A;
   font-size: 20px;
+}
+
+.wrapper{
+  display:grid;
+  grid-template:
+    "A B";
+    grid-column-gap:2vw;
+  grid-row-gap: 5vh;
+  width:80vw;
+  margin: auto;
 }
   
 </style>
